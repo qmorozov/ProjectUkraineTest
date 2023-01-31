@@ -24,7 +24,6 @@ const DetailedProduct = (): JSX.Element => {
   const [selectedColor, setSelectedColor] = useState<Color | undefined>();
   const [selectedSize, setSelectedSize] = useState<string | undefined>();
   const [selectedImage, setSelectedImage] = useState(0);
-  const [imagesLoaded, setImagesLoaded] = useState<boolean[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -50,7 +49,6 @@ const DetailedProduct = (): JSX.Element => {
     setSelectedColor(color);
     setSelectedSize(undefined);
     setSelectedImage(0);
-    setImagesLoaded([]);
   };
 
   const handleSizeSelect = (size: string) => {
