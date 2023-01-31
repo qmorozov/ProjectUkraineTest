@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ProjectUkraineTest/static/css/main.18158782.css",
-    "main.js": "/ProjectUkraineTest/static/js/main.e2bc3d7b.js",
+    "main.js": "/ProjectUkraineTest/static/js/main.a48dc42b.js",
     "index.html": "/ProjectUkraineTest/index.html",
     "main.18158782.css.map": "/ProjectUkraineTest/static/css/main.18158782.css.map",
-    "main.e2bc3d7b.js.map": "/ProjectUkraineTest/static/js/main.e2bc3d7b.js.map"
+    "main.a48dc42b.js.map": "/ProjectUkraineTest/static/js/main.a48dc42b.js.map"
   },
   "entrypoints": [
     "static/css/main.18158782.css",
-    "static/js/main.e2bc3d7b.js"
+    "static/js/main.a48dc42b.js"
   ]
 }
