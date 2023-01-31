@@ -46,24 +46,6 @@ const DetailedProduct = (): JSX.Element => {
     }
   }, [selectedColor]);
 
-  useEffect(() => {
-    if (selectedColor) {
-      const preloadImages = async () => {
-        const images = selectedColor.images.map(
-            (image) =>
-                new Promise((resolve) => {
-                  const img = new Image();
-                  img.src = image;
-                  img.onload = resolve;
-                })
-        );
-        await Promise.all(images);
-        setImagesLoaded(selectedColor.images.map(() => true));
-      };
-      preloadImages();
-    }
-  }, [selectedColor]);
-
   const handleColorSelect = (color: Color) => {
     setSelectedColor(color);
     setSelectedSize(undefined);
