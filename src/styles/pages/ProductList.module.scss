@@ -1,0 +1,43 @@
+@use '../variables';
+
+.Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: variables.rem(20px);
+  padding: variables.rem(20px);
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: variables.rem(400px);
+  height: 100%;
+  max-height: variables.rem(500px);
+  padding: variables.rem(14px);
+  border: variables.rem(1px) solid;
+  border-radius: variables.rem(8px);
+  background-color: #fff;
+  row-gap: variables.rem(10px);
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 variables.rem(10px) variables.rem(13px) variables.rem(-7px) #000000, variables.rem(45px) variables.rem(10px) variables.rem(32px) variables.rem(50px) rgba(0, 0, 0, 0);
+  }
+
+  span {
+    text-transform: uppercase;
+    font-size: variables.rem(28px);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: variables.rem(300px);
+    max-height: variables.rem(400px);
+    border-radius: variables.rem(16px);
+  }
+}
